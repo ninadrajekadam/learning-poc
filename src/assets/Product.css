@@ -1,0 +1,12 @@
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.card-text {
+  display: -webkit-box;
+	line-clamp: 2;
+  -webkit-line-clamp: 2;   /* number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
