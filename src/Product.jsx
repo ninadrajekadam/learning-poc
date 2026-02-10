@@ -1,9 +1,9 @@
-import './assets/product.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { Col, Container, Row, Card, Button, InputGroup, Form } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 import { getProducts } from './redux/slice';
 import { addCart, removeCart } from './redux/product-slice';
+import './assets/product.css';
 
 const Product = () => {
   const dispatch = useDispatch();
