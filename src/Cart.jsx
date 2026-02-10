@@ -24,14 +24,16 @@ const Cart = () => {
                 <p>{item.brand}</p>
               </Col>
               <Col md={2} className="text-end">
-                <h6>Price: {item.price}</h6>
+                <h6>Qty: {item.quantity}</h6>
+                <h6 className="original-price">Price: {item.price}</h6>
+                <h6 className="total-price">Total: {(item.price * item.quantity).toFixed(2)}</h6>
                 <Button onClick={() => dispatch(removeCart(item))} variant="outline-danger">Remove</Button>
               </Col>
             </Row>
           ))
         }
         <div className="text-end pt-3">
-          <h4>Total: {cartItems.reduce((sum, item) => sum + item.price, 0).toFixed(2)}</h4>
+          <h4>Total:{" "}{cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2)}</h4>
         </div>
       </Container>
     </>

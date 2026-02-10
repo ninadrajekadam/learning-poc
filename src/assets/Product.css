@@ -10,3 +10,10 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.original-price {
+	font-size: 14px;
+}
+.total-price {
+	font-size: 18px;
+	font-weight: 600;
+}
