@@ -1,7 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 const getProductsAPI = 'https://dummyjson.com/products';
-
 const getProducts = createAsyncThunk('products', async () => {
 	const response = await fetch(getProductsAPI);
 	const data = await response.json();
@@ -32,6 +31,5 @@ const productSlice = createSlice({
 			})
 	}
 });
-
 export { getProducts };
 export default productSlice.reducer;

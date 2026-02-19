@@ -37,9 +37,7 @@ const Cart = () => {
             </>
           ))
         }
-        {
-          cartItems.length === 0 && <h1 className="text-center mt-5">Your Cart is Empty</h1>
-        }
+        { cartItems.length === 0 && <h1 className="text-center mt-5">Your Cart is Empty</h1> }
       </Container>
     </>
   );
